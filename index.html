@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+      </div>
+    </nav>
+    <section class="container-fluid">
+      <div class="row">
+        <!-- SEARCH -->
+        <div class="col-md-3 p-3" id="search">
+          <h1>Search for a City:</h1>
+          <form class="row">
+            <div class="col-sm-12 col-lg-8 p-3">
+              <input class="form-control" id="city-input" placeholder="Boston" />
+            </div>
+            <div class="col-sm-12 col-lg-4 p-3">
+              <button type="button" class="btn btn-primary col-12" id="search-btn">Search</button>
+            </div>
+          </form>
+        </div>
+        <!-- CURRENT -->
+        <div class="col-md-9 p-3">
+          <h1><span id="day-0-city"></span></h1>
+          <div class="container-fluid p-3">
+            <div class="row">
+              <div class="col-sm-12me-2 mb-2 p-3 forecast-card" id="day-0">
+                <p>Temp: <span id="day-0-temp"></span></p>
+                <p>Wind: <span id="day-0-wind"></span></p>
+                <p>Humidity: <span id="day-0-humidity"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- PREVIOUS SEARCHES -->
+        <div class="col-md-3 order-2 order-md-1 p-3">
+          <p>Previous Searches</p>
+          <div class="row" id="searched">
+
+          </div>
+        </div>
+        <!-- FIVE DAY FORECAST -->
+        <div class="col-md-9 order-1 order-md-2 p-3" id="five-day">
+          <h1>Five-Day Forecast</h1>
+          <div class="container-fluid p-3">
+            <div class="row d-flex justify-content-around">
+              <div class="col-sm-12 col-lg-4 col-xl-2 me-2 mb-2 p-3 forecast-card" id="day-1">x</div>
+              <div class="col-sm-12 col-lg-4 col-xl-2 me-2 mb-2 p-3 forecast-card" id="day-2">x</div>
+              <div class="col-sm-12 col-lg-4 col-xl-2 me-2 mb-2 p-3 forecast-card" id="day-3">x</div>
+              <div class="col-sm-12 col-lg-4 col-xl-2 me-2 mb-2 p-3 forecast-card" id="day-4">x</div>
+              <div class="col-sm-12 col-lg-4 col-xl-2 me-2 mb-2 p-3 forecast-card" id="day-5">x</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="assets/js/script.js" async defer></script>
+  </body>
+
+</html>

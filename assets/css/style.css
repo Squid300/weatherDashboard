@@ -1,0 +1,28 @@
+body {
+  background-color: aliceblue;
+}
+
+nav {
+  background-color: rgb(232, 236, 255);
+}
+
+.forecast-card {
+  background-color:rgb(232, 236, 255);
+  border-radius: 25px;
+}
+
+.high {
+  color:rgb(163, 77, 94);
+}
+
+.nice {
+  color:rgb(115, 155, 75);
+}
+
+.cold {
+  color:rgb(112, 182, 182);
+}
+
+.freezing {
+  color:rgb(162, 212, 255);
+}
