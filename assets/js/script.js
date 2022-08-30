@@ -21,7 +21,7 @@ function parseWeather(data) {
     temp: Math.floor(data.main.temp_max),
     wind: Math.floor(data.wind.speed),
     humidity: data.main.humidity,
-    icon: "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
+    icon: "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
   };
 }
 
@@ -39,7 +39,7 @@ function parse5Weather(data) {
     let temps = [];
     let winds = [];
     let humidities = [];
-    let icon = "http://openweathermap.org/img/wn/" + day[3].weather[0].icon + ".png";
+    let icon = "https://openweathermap.org/img/wn/" + day[3].weather[0].icon + ".png";
 
     for (let i = 0; i < day.length; i++) {
       temps.push(day[i].main.temp);
@@ -128,7 +128,7 @@ function populateSearches() {
 function searchWeather(city) {
   let lat;
   let long;
-  const queryURLCity = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=b2e49f565c442147f827e664c3ed57d4"
+  const queryURLCity = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=b2e49f565c442147f827e664c3ed57d4"
   fetch(queryURLCity)
   .then((response) => response.json())
   .then((data) => {
